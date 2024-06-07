@@ -1,6 +1,6 @@
 <style>
     .sub-button{
-        background-color: rgb(240, 77, 77);
+        background-color: rgb(246, 0, 0);
         color: white;
         border: none;
         border-radius: 10px;
@@ -9,6 +9,15 @@
         cursor: pointer;
         font-family: Arial;
         font-size: 100%;
+        transition: opacity .5s;
+    }
+
+    .sub-button:hover{
+        opacity: .50;
+    }
+
+    .sub-button:active{
+        opacity: .30;
     }
 
     .join-button{
@@ -22,6 +31,17 @@
         width: 100px;
         font-size: medium;
         cursor: pointer;
+        transition: background-color .5s, color .5s;
+    }
+
+    .join-button:hover{
+        background-color: blue;
+        color: white;
+
+    }
+
+    .join-button:active{
+        opacity: .5;
     }
 
     .amazon-button{
@@ -32,6 +52,14 @@
         height: 40px;
         width: 200px;
         cursor: pointer;
+    }
+
+    .amazon-button:hover{
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, .15);
+    }
+
+    .amazon-button:active{
+        opacity: .4;
     }
 </style>
 
